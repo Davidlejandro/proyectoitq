@@ -1,0 +1,134 @@
+/*Tamaño del contenido de toda la pagina*/
+html {
+    font-size: 16px;
+}
+
+/*voy a usar mediasquery para hacer adaptable la letra a un dispositivo diferente*/
+@media screen and(max-width:400px) {
+    html {
+        font-size: 3px;
+    }
+}
+
+/*Los elementos del heigth usaran el 100% de sus contenedores*/
+html,
+body {
+    height: 100%;
+    /*Le va a dar un margen desde el interior de un contenedor hacia el exterior*/
+    /*Quiere decir que se le quitar el margen para la pagina y se meustre por completo los contenedores*/
+    margin: 0;
+    background: rgb(255, 255, 255);
+}
+
+@media screen and(max-width:600px) {
+
+    h1,
+    .h1,
+    h2,
+    .h2,
+    h3,
+    .h3,
+    h4,
+    .h4 {
+        /*Margen hacia arriba*/
+        margin-top: 6rem;
+    }
+}
+
+.tiendauno {
+    position: relative;
+    width: 100%;
+    border: 1px solid rgb(243, 194, 120);
+    height: 80px;
+    background-color: rgb(243, 194, 120);
+    /*De derecha a la izquierda*/
+    right: 0;
+    /*De izquierda a la derecha*/
+    left: 0;
+    /*De abajo para arriva*/
+    bottom: 0;
+}
+
+/*estilo al menu de la tienda para regresar a la pagina principal*/
+.tiendauno a {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    left: 1%;
+    padding-top: 1%;
+    display: inline-block;
+    list-style: none;
+    margin-left: 0;
+    margin-top: 20px;
+    padding-left: 0%;
+    font-family: Barlow;
+    font-size: 25px;
+    display: block;
+    margin: 0 1rem;
+    color: white;
+    position: relative;
+    /*De derecha a la izquierda*/
+    right: 0;
+    /*De izquierda a la derecha*/
+    left: 0;
+    /*De abajo para arriva*/
+    bottom: 0;
+}
+
+.tiendauno a:hover,
+.tiendauno a:focus,
+.tiendauno a:active {
+    color: rgb(230, 162, 44);
+}
+
+/*estilo del contenedor de la pagina principal*/
+.licohores {
+    width: 100%;
+    border: 1px solid rgb(0, 0, 0);
+    display: block;
+    position: relative;
+}
+
+.Ubication {
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    border: 1px solid rgb(0, 0, 0);
+    color: rgba(rgb(255, 205, 113), rgb(255, 203, 113), rgb(255, 205, 113), alpha);
+    /*no tendra dezplasamiento en la derecha*/
+    right: auto;
+    /*No tendra dezplasamiento a la izquierda*/
+    bottom: auto;
+}
+
+.visual-ubication img {
+    /*Posicion absoluta*/
+    position: relative;
+    /*ancho de la imagen con 67 pixeles*/
+    width: 200px;
+    /*alto de 67 pixeles de la imagen*/
+    height: 67px;
+    /*dezplasamiento en la derecha*/
+    left: 44%;
+    /*no tendra dezplasamiento en la derecha*/
+    right: auto;
+    /*No tendra dezplasamiento a la izquierda*/
+    bottom: auto;
+    margin: 0;
+}
+
+.header-social li a{
+    position: relative;
+    font-size: 30px;
+    /* Tamaño de los iconos */
+    color: #ffd569;
+    /* Cambia el color del ícono */
+    margin-right: 10px;
+    /* Espaciado entre íconos */
+    padding: 18px 0;
+    /*Ajusta el relleno y la altura de línea de los enlaces de navegación*/
+    line-height: 20px;
+}
+.numero_contacto ul li{
+    height: 20%;
+}

@@ -13,13 +13,14 @@ html {
 /*Los elementos del heigth usaran el 100% de sus contenedores*/
 html,
 body {
-    height: 100%;
+    width: 100%;
     /*Le va a dar un margen desde el interior de un contenedor hacia el exterior*/
     /*Quiere decir que se le quitar el margen para la pagina y se meustre por completo los contenedores*/
     margin: 0;
-    background: rgb(255, 255, 255);
+    background: rgb(255, 239, 207);
 }
 
+/*Si el dispostivo tiene un tamaño mayor a 600 px hacer*/
 @media screen and(max-width:600px) {
 
     h1,
@@ -33,6 +34,44 @@ body {
         /*Margen hacia arriba*/
         margin-top: 6rem;
     }
+}
+.dos-opciones {
+    position: relative;
+    width: 100%;
+    border: 1px solid rgb(243, 194, 120);
+    height: 80px;
+    background-color: rgb(243, 194, 120);
+    /*De derecha a la izquierda*/
+    right: 0;
+    /*De izquierda a la derecha*/
+    left: 0;
+    /*De abajo para arriva*/
+    bottom: 0;
+}
+/*estilo al menu de la tienda para regresar a la pagina principal*/
+.dos-opciones a {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    left: 1%;
+    padding-top: 1%;
+    display: inline-block;
+    list-style: none;
+    margin-left: 0;
+    margin-top: 20px;
+    padding-left: 0%;
+    font-family: Barlow;
+    font-size: 25px;
+    display: block;
+    margin: 0 1rem;
+    color: white;
+    position: relative;
+    /*De derecha a la izquierda*/
+    right: 0;
+    /*De izquierda a la derecha*/
+    left: 0;
+    /*De abajo para arriva*/
+    bottom: 0;
 }
 
 .tiendauno {
@@ -80,21 +119,54 @@ body {
 .tiendauno a:active {
     color: rgb(230, 162, 44);
 }
-
-/*estilo del contenedor de la pagina principal*/
-.licohores {
-    width: 100%;
-    border: 1px solid rgb(0, 0, 0);
-    display: block;
-    position: relative;
+.licohores h2 img{
+    width:105px;
+    height:170px;
 }
+/*cambio de letra y el color de la letra*/
+.licohores a{
+    font-family: barlow;
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+
+    /*centramos el texto al centro de cada producto*/
+}.licohores h2{
+    text-align: center;
+}
+/*Cambiamos el tipo de color cuando el usuario ingrese el cursor a la imagen*/
+.licohores a:hover,
+.licohores a:focus,
+.licohores a:active{
+    color: rgb(211, 134, 40);
+}
+.menu li a{
+    list-style:none;
+    display: inline-block;
+    font-family: barlow;
+}
+/*-------------------------------------------------------------------------------------------------------------------*/
+/*posiciones y cambios en las imagenes de los licohores*/
+.licohores {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 2fr));
+    gap: 15px; /* Espacio entre los elementos */
+  }
+
+  .licohores img {
+    width: 100%;
+    border-radius: 8px;
+  }
+
+  .licohores h2 {
+    text-align: center;
+    margin-top: 8px;
+  }
 
 .Ubication {
-    position: absolute;
+    position: relative;
     width: 100%;
-    height: 50%;
-    border: 1px solid rgb(0, 0, 0);
-    color: rgba(rgb(255, 205, 113), rgb(255, 203, 113), rgb(255, 205, 113), alpha);
+    border: 1px solid rgb(255, 226, 168);
+    background-color: rgb(255, 220, 149);
     /*no tendra dezplasamiento en la derecha*/
     right: auto;
     /*No tendra dezplasamiento a la izquierda*/
@@ -117,18 +189,76 @@ body {
     margin: 0;
 }
 
-.header-social li a{
+.Ubication {
     position: relative;
-    font-size: 30px;
-    /* Tamaño de los iconos */
-    color: #ffd569;
-    /* Cambia el color del ícono */
-    margin-right: 10px;
-    /* Espaciado entre íconos */
-    padding: 18px 0;
-    /*Ajusta el relleno y la altura de línea de los enlaces de navegación*/
-    line-height: 20px;
+    width: 100%;
+    border: 1px solid rgb(255, 226, 168);
+    background-color: rgb(255, 220, 149);
+    /*no tendra dezplasamiento en la derecha*/
+    right: auto;
+    /*No tendra dezplasamiento a la izquierda*/
+    bottom: auto;
 }
-.numero_contacto ul li{
-    height: 20%;
+
+.visual-ubication img {
+    /*Posicion absoluta*/
+    position: relative;
+    /*ancho de la imagen con 67 pixeles*/
+    width: 200px;
+    /*alto de 67 pixeles de la imagen*/
+    height: 67px;
+    /*dezplasamiento en la derecha*/
+    left: 44%;
+    /*no tendra dezplasamiento en la derecha*/
+    right: auto;
+    /*No tendra dezplasamiento a la izquierda*/
+    bottom: auto;
+    margin: 0;
+}
+
+.Ubication {
+    position: relative;
+    width: 100%;
+    border: 1px solid rgb(255, 226, 168);
+    background-color: rgb(255, 220, 149);
+    /*no tendra dezplasamiento en la derecha*/
+    right: auto;
+    /*No tendra dezplasamiento a la izquierda*/
+    bottom: auto;
+}
+
+.visual-ubication img {
+    /*Posicion absoluta*/
+    position: relative;
+    /*ancho de la imagen con 67 pixeles*/
+    width: 200px;
+    /*alto de 67 pixeles de la imagen*/
+    height: 67px;
+    /*dezplasamiento en la derecha*/
+    left: 44%;
+    /*no tendra dezplasamiento en la derecha*/
+    right: auto;
+    /*No tendra dezplasamiento a la izquierda*/
+    bottom: auto;
+    margin: 0;
+}
+
+.header-social li {
+    list-style: none;
+}
+
+.header-social li a i {
+    font-size: 40px;
+    width: 40px;
+    height: 40px;
+    color: rgb(251, 144, 44);
+}
+
+.numero_contacto ul li {
+    list-style: none;
+    margin-left: 300px;
+    font-size: 20px;
+    transform: translateY(-70px);
+    color: rgb(251, 144, 44);
+    font-family: barlow;
 }

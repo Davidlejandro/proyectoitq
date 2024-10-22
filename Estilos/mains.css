@@ -18,7 +18,7 @@ body {
     /*Le va a dar un margen desde el interior de un contenedor hacia el exterior*/
     /*Quiere decir que se le quitar el margen para la pagina y se meustre por completo los contenedores*/
     margin: 0;
-    background: rgb(255, 255, 255);
+    background: rgb(255, 221, 157);
 }
 /*Si el dispostivo tiene un tamaño mayor a 600 px hacer*/
 @media screen and(max-width:600px) {
@@ -134,30 +134,20 @@ body {
 .Content-About {
     position: relative;
     width: 100%;
-    border: 1px solid rgb(255, 226, 168);
+    border: 1px solid rgb(255, 218, 144);
+    background: white;
 }
 
 /*para eliminar los puntos de la lista desordenada*/
 .menudos ul {
-    list-style: none;
+    font-family: barlow;
 }
 
-/*Desarrollo de contenedor para el menu de la pagina*/
-.title-about-us {
-    display: block;
-    position: absolute;
-    width: 100%;
-    border: 1px solid rgb(245, 180, 95);
-    width: 198px;
-    height: 1503px;
-    background-color: rgb(245, 180, 95);
-}
 /*Dar posicion a las opciones del menu y estilos*/
 .title-about-us h2 {
-    position: absolute;
     font-family: barlow;
     right: 50px;
-    color: aliceblue;
+    color: black;
 }
 
 /*el menu tendra una posicion absoluta y con la cantidad de pixeles para la ubicacion*/
@@ -192,248 +182,28 @@ body {
 .productosprincipal a:active{
     color: rgb(211, 134, 40);
 }
-/*ubicamos y damos estilo a la opcion 1*/
-.C-Licores {
-    position: relative;
+.menu li a{
+    list-style:none;
+    display: inline-block;
     font-family: barlow;
-    top: 6%;
-    width: 115px;
-    font-size: 20px;
-    color: aliceblue;
 }
-
-/*ubicamos y damos estilo a la opcion 2*/
-.C-vinos {
-    position: relative;
-    font-family: barlow;
-    top: 9%;
-    width: 107px;
-    font-size: 20px;
-    color: aliceblue;
-}
-
-/*ubicamos y damos estilo a la opcion 3*/
-.C-cremas {
-    position: relative;
-    font-family: barlow;
-    top: 12%;
-    width: 116px;
-    font-size: 20px;
-    color: aliceblue;
-}
-
 /*-------------------------------------------------------------------------------------------------------------------*/
-#img1 {
-    position: relative;
-    right:0px ;
-    left:-380px ;
-    top: 30px;
-    font-size: 13px;
-}
-#img2 {
-    position: absolute;
-    right:0px ;
-    left:-172px ;
-    top: 38px;
-    font-size: 13px;
-}
-#img3 {
-    position: absolute;
-    right:0px ;
-    left:470px ;
-    top: 35px;
-    font-size: 13px;
-}
-#img4 {
-    position: absolute;
-    right:0px ;
-    left:1100px ;
-    top: 36px;
-    font-size: 13px;
-}
-#img5 {
-    position: relative;
-    right:0px ;
-    left:-380px ;
-    top: 70px;
-    font-size: 13px;
-}
-#img6 {
-    position: absolute;
-    right:0px ;
-    left:-172px ;
-    top: 282px;
-    font-size: 13px;
-}
-#img7 {
-    position: absolute;
-    right:0px ;
-    left:470px ;
-    top: 435px;
-    font-size: 13px;
-}
-#img8 {
-    position: absolute;
-    right:0px ;
-    left:1100px ;
-    top: 435px;
-    font-size: 13px;
-}
-#img9 {
-    position: relative;
-    right:0px ;
-    left:280px ;
-    top: 100px;
-    font-size: 13px;
-}
-#img10 {
-    position: absolute;
-    right:0px ;
-    left:580px ;
-    top: 855px;
-    font-size: 13px;
-}
-#img11 {
-    position: absolute;
-    right:0px ;
-    left:880px ;
-    top: 805px;
-    font-size: 13px;
-}
-#img12 {
-    position: absolute;
-    right:0px ;
-    left:1180px ;
-    top: 812px;
-    font-size: 13px;
-}
-#img13 {
-    position: relative;
-    right:0px ;
-    left:280px ;
-    top: 147px;
-    font-size: 13px;
-}
-#img14 {
-    position: absolute;
-    right:0px ;
-    left:580px ;
-    top: 1200px;
-    font-size: 13px;
-}
-#img15 {
-    position: absolute;
-    right:0px ;
-    left:880px ;
-    top: 1200px;
-    font-size: 13px;
-}
-#img16 {
-    position: absolute;
-    right:0px ;
-    left:1180px ;
-    top: 1207px;
-    font-size: 13px;
-}
-#img17 {
-    position: relative;
-    right:0px ;
-    left:280px ;
-    top: 200px;
-    font-size: 13px;
-}
-#img18 {
-    position: absolute;
-    right:0px ;
-    left:580px ;
-    top: 1600px;
-    font-size: 13px;
-}
-#img19 {
-    position: absolute;
-    right:0px ;
-    left:880px ;
-    top: 1620px;
-    font-size: 13px;
-}
-#img20 {
-    position: absolute;
-    right:0px ;
-    left:1180px ;
-    top: 1620px;
-    font-size: 13px;
-}
-#img21 {
-    position: relative;
-    right:0px ;
-    left:280px ;
-    top: 240px;
-    font-size: 13px;
-}
-#img22 {
-    position: absolute;
-    right:0px ;
-    left:580px ;
-    top: 1996px;
-    font-size: 13px;
-}
-#img23 {
-    position: absolute;
-    right:0px ;
-    left:880px ;
-    top: 2005px;
-    font-size: 13px;
-}
-#img24 {
-    position: absolute;
-    right:0px ;
-    left:1180px ;
-    top: 2003px;
-    font-size: 13px;
-}
-#img25 {
-    position: relative;
-    right:0px ;
-    left:280px ;
-    top: 300px;
-    font-size: 13px;
-}
-#img26 {
-    position: absolute;
-    right:0px ;
-    left:580px ;
-    top: 2410px;
-    font-size: 13px;
-}
-#img27 {
-    position: absolute;
-    right:0px ;
-    left:880px ;
-    top: 2413px;
-    font-size: 13px;
-}
-#img28 {
-    position: absolute;
-    right:0px ;
-    left:1180px ;
-    top: 2418px;
-    font-size: 13px;
-}
-#img29 {
-    position: relative;
-    right:0px ;
-    left:280px ;
-    top: 330px;
-    font-size: 13px;
-}
-#img30 {
-    position: absolute;
-    right:0px ;
-    left:580px ;
-    top: 2500px;
-    font-size: 13px;
-}
 
+.productosprincipal {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 2fr));
+    gap: 15px; /* Espacio entre los elementos */
+  }
+
+  .productosprincipal img {
+    width: 100%;
+    border-radius: 8px;
+  }
+
+  .productosprincipal h2 {
+    text-align: center;
+    margin-top: 8px;
+  }
 /*-------------------------------------------------------------------------------------------------------------------*/
 /*Desarrollo de estilos al apartado de como llegar a la casita salinera*/
 
@@ -479,3 +249,4 @@ body {
     bottom: auto;
     margin: 0;
 }
+

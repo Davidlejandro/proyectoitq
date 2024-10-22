@@ -1,0 +1,184 @@
+/* Tamaño del contenido de toda la página */
+html {
+    font-size: 16px; /* Base para el tamaño de fuente */
+}
+
+/* Mediasquery para tamaños de pantalla menores a 400px */
+@media screen and (max-width: 400px) {
+    html {
+        font-size: 12px; /* Ajuste más razonable que 3px */
+    }
+}
+
+/* Los elementos del height usarán el 100% de sus contenedores */
+html,
+body {
+    width: 100%;
+    border: 1px solid rgb(255, 239, 207);
+    margin: 0;
+    background: rgb(255, 239, 207);
+}
+
+/* Mediasquery para tamaños de pantalla menores a 600px */
+@media screen and (max-width: 600px) {
+    h1,
+    .h1,
+    h2,
+    .h2,
+    h3,
+    .h3,
+    h4,
+    .h4 {
+        margin-top: 3rem; /* Ajuste de margen */
+    }
+}
+
+/* Estilos para .dos-opciones */
+.dos-opciones {
+    position: relative;
+    width: 100%;
+    border: 1px solid rgb(243, 194, 120);
+    height: 80px;
+    background-color: rgb(243, 194, 120);
+    display: flex; /* Usar flexbox */
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+}
+
+/* Estilo al menú de la tienda para regresar a la página principal */
+.dos-opciones a {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    padding: 1rem 0; /* Ajuste de padding */
+    font-family: Barlow;
+    font-size: 1.5rem; /* Unidades relativas */
+    color: white;
+    margin: 0 1rem;
+}
+
+/* Estilos para .tiendauno */
+.tiendauno {
+    position: relative;
+    width: 100%;
+    border: 1px solid rgb(243, 194, 120);
+    height: 80px;
+    background-color: rgb(243, 194, 120);
+    display: flex; /* Usar flexbox */
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+}
+
+/* Estilo al menú de la tienda para regresar a la página principal */
+.tiendauno a {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    padding: 1rem 0; /* Ajuste de padding */
+    font-family: Barlow;
+    font-size: 1.5rem; /* Unidades relativas */
+    color: white;
+    margin: 0; /* Eliminar margenes laterales */
+}
+
+.tiendauno a:hover,
+.tiendauno a:focus,
+.tiendauno a:active {
+    color: rgb(230, 162, 44);
+}
+
+/* Estilos para .header-social */
+.header-social {
+    display: flex; /* Usar flexbox */
+    justify-content: center; /* Centrar horizontalmente */
+    margin: 1rem 0; /* Margen superior e inferior */
+}
+
+/* Tamaño y posición a los iconos de las redes sociales */
+.header-social li {
+    margin: 0 1rem; /* Espacio entre iconos */
+}
+
+.header-social li a i {
+    font-size: 2.5rem; /* Unidades relativas */
+    color: rgb(255, 170, 58);
+}
+
+/* Estilos para .Ubication */
+.Ubication {
+    position: relative;
+    width: 100%;
+    border: 1px solid rgb(255, 226, 168);
+    background-color: rgb(255, 220, 149);
+}
+
+/* Estilo para imágenes en .visual-ubication */
+.visual-ubication img {
+    position: relative;
+    width: 100%; /* Ajustar a 100% del contenedor */
+    max-width: 200px; /* Limitar el ancho máximo */
+    height: auto; /* Mantener proporciones */
+    left: 50%; /* Centrar */
+    transform: translateX(-50%); /* Ajustar centrado */
+}
+
+/* Estilos para #contactos_h2 */
+#contactos_h2 h2 {
+    text-align: center;
+    color: rgb(255, 170, 58);
+    font-family: Barlow;
+}
+
+/* Estilo al párrafo de las instrucciones */
+#contactos_p h3 p {
+    text-align: center; /* Centramos el texto */
+    color: rgb(253, 180, 107);
+    font-size: 1.25rem; /* Unidades relativas */
+    font-family: Lexend;
+}
+
+/* Estilo a la lista de los contactos */
+.loscontactos ul li {
+    list-style: none;
+    font-size: 1.25rem; /* Unidades relativas */
+    color: rgb(253, 180, 107);
+    text-align: center; /* Centrar elementos */
+}
+
+/* Estilo a los contactos de la ubicación */
+#contactos_ubicacion h1 { 
+    text-align: center;
+    color: rgb(255, 170, 58);
+    font-family: Barlow;
+    font-size: 1.5rem; /* Unidades relativas */
+}
+
+/* Ubicación de la imagen del mapa */
+#mapa {
+    display: flex; /* Usar flexbox para centrar la imagen */
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    overflow: hidden; /* Ocultar cualquier desbordamiento */
+    width: 100%; /* Ancho completo del contenedor */
+    max-width: 600px; /* Ancho máximo, opcional */
+    margin: 0 auto; /* Centrar el contenedor */
+}
+
+#mapa img { 
+    width: 100%; /* Ajusta la imagen al ancho del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    display: block; /* Asegura que no haya espacio en la parte inferior */
+}
+
+/* Indicamos que los iconos sociales no tengan puntos de lista desordenada */
+.header-social li {
+    list-style: none;
+}
+
+/* Ubicación a los contactos de las listas al lado de los iconos para diseño moderno */
+.numero_contacto ul li {
+    list-style: none;
+    font-size: 1.25rem; /* Unidades relativas */
+    color: rgb(251, 144, 44);
+    text-align: center; /* Centrar elementos */
+}

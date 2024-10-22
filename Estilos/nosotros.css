@@ -1,0 +1,142 @@
+html {
+    font-size: 16px;
+}
+
+/* Adaptamos la letra para pantallas pequeñas */
+@media screen and (max-width: 400px) {
+    html {
+        font-size: 12px;
+    }
+}
+
+/* Alineamos todos los elementos a lo largo del contenedor */
+html,
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background: rgb(255, 239, 207);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Para pantallas menores a 600px, hacemos ajustes */
+/* Estilos responsivos */
+@media screen and (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+
+    .visual-ubication img {
+        width: 100%;
+        max-width: 150px;
+    }
+
+    .header-social i {
+        font-size: 30px;
+    }
+
+    .numero_contacto {
+        font-size: 16px;
+    }
+}
+
+
+/* Estilos de las secciones */
+.dos-opciones, .tiendauno, .Ubication {
+    width: 100%;
+    height: 80px;
+    background-color: rgb(243, 194, 120);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Centramos los enlaces en las secciones */
+.dos-opciones a, .tiendauno a {
+    font-family: Barlow;
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    margin: 0 1rem;
+    text-decoration: none;
+}
+
+/* Hover y estado activo de los enlaces */
+.tiendauno a:hover,
+.tiendauno a:focus,
+.tiendauno a:active {
+    color: rgb(230, 162, 44);
+}
+
+/* Centramos la imagen en la sección de ubicación */
+.visual-ubication img {
+    width: 200px;
+    height: 67px;
+    margin: 0 auto;
+    display: block;
+}
+
+/* Centramos el logo */
+#Logo_nosotros img {
+    max-width: 100%; /* Ajusta el ancho al contenedor */
+    height: auto;    /* Mantiene la proporción de la imagen */
+    margin: 0 auto;
+    display: block;
+}
+#Logo_nosotros {
+    width: 100%; /* Contenedor ocupa todo el ancho disponible */
+    max-width: 600px; /* Limita el ancho máximo si es necesario */
+    margin: 0 auto; /* Centra el contenedor */
+}
+/* Centramos y estilizamos el título */
+#nosotros_h2 h2 {
+    text-align: center;
+    color: rgb(255, 131, 37);
+    font-family: Barlow;
+}
+
+/* Centramos y estilizamos los párrafos */
+#nosotros_p h3 p {
+    font-size: 23px;
+    text-align: center;
+    color: rgb(255, 131, 37);
+    font-family: Lexend;
+}
+
+/* Centrar el contenido completo de la sección de contacto */
+.numero_contacto {
+    text-align: center; /* Centra todo el contenido */
+    margin-top: 20px;
+}
+
+/* Alinear los iconos de redes sociales en una fila */
+.header-social {
+    display: flex;
+    justify-content: center; /* Centra los iconos horizontalmente */
+    gap: 20px; /* Añade espacio entre los iconos */
+    padding: 0;
+    list-style: none;
+    margin-bottom: 10px; /* Añade espacio entre los iconos y la información de contacto */
+}
+
+/* Estilo para los iconos de redes sociales */
+.header-social li a i {
+    font-size: 45px;
+    width: 40px;
+    height: 40px;
+    color: rgb(251, 144, 44);
+}
+
+/* Centrar y estilizar la información de contacto */
+.numero_contacto ul li {
+    text-align: center; /* Centra el texto del contacto */
+    list-style: none;
+    font-size: 20px;
+    color: rgb(255, 131, 37);
+    font-family: Barlow, sans-serif;
+    margin-top: 1px; /* Mueve el texto hacia arriba */
+    transform: translateY(-10px); /* Ajusta aún más hacia arriba */
+}

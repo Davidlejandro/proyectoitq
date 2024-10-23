@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -12,62 +12,67 @@
 </head>
 
 <body>
-    <!--Uso de referencias para volver a la pagina index.html-->
+    <!-- Encabezado con enlace a la página principal -->
     <div class="tiendauno">
         <a href="../index.html">Tienda</a>
     </div>
-    <!--Creacion de diferentes id para poder hacer de mejor manera el css-->
-    <div id="contactos_h2">
-        <h2>
-            Contáctanos
-        </h2>
-        <!--Creacion de diferentes id para poder hacer de mejor manera el css-->
-        <div id="contactos_p">
-            <h3>
-                <p>Deseas conocer más sobre nuestros productos, precios, información de distribución, te invito a que
-                    nos escribas y nos llames:</p>
-            </h3>
-        </div>
-    </div>
-    <!--Creacion de diferentes id para poder hacer de mejor manera el css-->
-    <div class="loscontactos">
+
+    <!-- Sección de contacto -->
+    <section id="contactos">
+        <h2>Contáctanos</h2>
+        <p>¿Deseas conocer más sobre nuestros productos, precios, información de distribución? ¡Escríbenos o llámanos!
+        </p>
+    </section>
+
+    <!-- Lista de contactos -->
+    <section class="loscontactos">
         <ul>
-            <li>cristhianescobar965@gmail.com</li>
-            <li>0997163114</li>
+            <li>Email: cristhianescobar965@gmail.com</li>
+            <li>Teléfono: 0997163114</li>
         </ul>
-    </div>
-    <!--Creacion de diferentes id para poder hacer de mejor manera el css-->
-    <div id="contactos_ubicacion">
-        <h1>
-            SALINAS DE GUARANDA <br>
-            Direccion: Unnamed Road, Salinas
-        </h1>
-    </div>
+    </section>
+
+    <!-- Información de ubicación -->
+    <section id="contactos_ubicacion">
+        <h1>SALINAS DE GUARANDA</h1>
+        <p>Dirección: Guaranda AE125, Salinas</p>
+    </section>
+
+    <!-- Imagen de la ubicación -->
     <div id="mapa">
-        <!--Imagen de la ubicacion de la casita salinera-->
-        <img src="../imagenes/Ubicacion.png" alt="Ubicacion" title="Ubicacion">
+        <img src="../imagenes/Ubicacion.png" alt="Ubicación de Salinas" title="Ubicación de Salinas">
     </div>
-    <!--Creamos una lista desordenada para las redes sociales
-======================================-->
-    <!--Referencia a una pequeña imagen del google maps-->
+
+    <!-- Imagen de Google Maps -->
     <section class="Ubication">
         <div class="visual-ubication">
-            <!--Referencia a una pequeña imagen del google maps-->
-            <img src="../imagenes/Google.png" alt="google maps">
+            <img src="../imagenes/Google.png" alt="Ver en Google Maps" title="Google Maps">
         </div>
     </section>
+
+    <!-- Redes sociales -->
     <ul class="header-social">
-        <li><a href="https://www.facebook.com/p/La-Casa-Salinera-100064593046415/"><i class="fab fa-facebook"
-                    aria-hidden="true"></i></a></li>
-        <li><a href="https://www.instagram.com/lacasitasalinera2012?igsh=MWVhNmx1M2lxbXZodw=="><i
-                    class="fab fa-instagram" aria-hidden="true"></i></a></li>
+        <li>
+            <a href="https://www.facebook.com/p/La-Casa-Salinera-100064593046415/">
+                <i class="fab fa-facebook" aria-hidden="true"></i>
+            </a>
+        </li>
+        <li>
+            <a href="https://www.instagram.com/lacasitasalinera2012?igsh=MWVhNmx1M2lxbXZodw==">
+                <i class="fab fa-instagram" aria-hidden="true"></i>
+            </a>
+        </li>
     </ul>
-    </nav>
-    <div class="numero_contacto">
-        <ul>
-            <li>cristhianescobar965@gmail.com</li>
-            <li>0997163114</li>
-        </ul>
+
+    <!-- Repetición del contacto -->
+    <footer>
+        <div class="numero_contacto">
+            <ul>
+                <li>Email: cristhianescobar965@gmail.com</li>
+                <li>Teléfono: 0997163114</li>
+            </ul>
+        </div>
+    </footer>
 </body>
 
 </html>

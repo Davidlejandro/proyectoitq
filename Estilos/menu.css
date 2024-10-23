@@ -6,7 +6,7 @@ html {
 /*voy a usar mediasquery para hacer adaptable la letra a un dispositivo diferente*/
 @media screen and(max-width:400px) {
     html {
-        font-size: 3px;
+        font-size:12px;
     }
 }
 
@@ -32,7 +32,7 @@ body {
     h4,
     .h4 {
         /*Margen hacia arriba*/
-        margin-top: 6rem;
+        margin-top: 4rem;
     }
 }
 .dos-opciones {
@@ -162,103 +162,63 @@ body {
     margin-top: 8px;
   }
 
-.Ubication {
-    position: relative;
-    width: 100%;
-    border: 1px solid rgb(255, 226, 168);
-    background-color: rgb(255, 220, 149);
-    /*no tendra dezplasamiento en la derecha*/
-    right: auto;
-    /*No tendra dezplasamiento a la izquierda*/
-    bottom: auto;
-}
-
-.visual-ubication img {
-    /*Posicion absoluta*/
-    position: relative;
-    /*ancho de la imagen con 67 pixeles*/
-    width: 200px;
-    /*alto de 67 pixeles de la imagen*/
-    height: 67px;
-    /*dezplasamiento en la derecha*/
-    left: 44%;
-    /*no tendra dezplasamiento en la derecha*/
-    right: auto;
-    /*No tendra dezplasamiento a la izquierda*/
-    bottom: auto;
-    margin: 0;
-}
-
-.Ubication {
-    position: relative;
-    width: 100%;
-    border: 1px solid rgb(255, 226, 168);
-    background-color: rgb(255, 220, 149);
-    /*no tendra dezplasamiento en la derecha*/
-    right: auto;
-    /*No tendra dezplasamiento a la izquierda*/
-    bottom: auto;
-}
-
-.visual-ubication img {
-    /*Posicion absoluta*/
-    position: relative;
-    /*ancho de la imagen con 67 pixeles*/
-    width: 200px;
-    /*alto de 67 pixeles de la imagen*/
-    height: 67px;
-    /*dezplasamiento en la derecha*/
-    left: 44%;
-    /*no tendra dezplasamiento en la derecha*/
-    right: auto;
-    /*No tendra dezplasamiento a la izquierda*/
-    bottom: auto;
-    margin: 0;
-}
-
-.Ubication {
-    position: relative;
-    width: 100%;
-    border: 1px solid rgb(255, 226, 168);
-    background-color: rgb(255, 220, 149);
-    /*no tendra dezplasamiento en la derecha*/
-    right: auto;
-    /*No tendra dezplasamiento a la izquierda*/
-    bottom: auto;
-}
-
-.visual-ubication img {
-    /*Posicion absoluta*/
-    position: relative;
-    /*ancho de la imagen con 67 pixeles*/
-    width: 200px;
-    /*alto de 67 pixeles de la imagen*/
-    height: 67px;
-    /*dezplasamiento en la derecha*/
-    left: 44%;
-    /*no tendra dezplasamiento en la derecha*/
-    right: auto;
-    /*No tendra dezplasamiento a la izquierda*/
-    bottom: auto;
-    margin: 0;
+/* Redes sociales */
+.header-social {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    padding: 10px 0;
 }
 
 .header-social li {
     list-style: none;
+    margin: 0 10px; /* Espacio entre iconos */
 }
 
-.header-social li a i {
-    font-size: 40px;
-    width: 40px;
-    height: 40px;
+.header-social li a {
+    font-size: 42px;
     color: rgb(251, 144, 44);
+}
+
+/* Contacto */
+.numero_contacto ul {
+    text-align: center; /* Centra los textos */
+    padding: 0; /* Quita el padding por defecto */
 }
 
 .numero_contacto ul li {
+    display: block;
     list-style: none;
-    margin-left: 300px;
-    font-size: 20px;
-    transform: translateY(-70px);
+    font-size: 25px;
     color: rgb(251, 144, 44);
-    font-family: barlow;
+    font-family: Barlow, sans-serif;
+    padding: 10px;
+}
+/* Media Queries para Responsividad */
+@media (max-width: 1000px) {
+    .header-main-nav a {
+        font-size: 20px; /* Ajusta el tamaño del texto */
+    }
+
+
+    .numero_contacto ul li {
+        font-size: 20px; /* Ajusta el tamaño del texto */
+    }
+
+    .header-social li a {
+        font-size: 36px; /* Ajusta el tamaño de los iconos */
+    }
+}
+
+@media (max-width: 750px) {
+    .header-main-nav a {
+        font-size: 18px; /* Tamaño aún más pequeño en pantallas muy pequeñas */
+    }
+
+    .numero_contacto ul li {
+        font-size: 18px; /* Ajusta el tamaño del texto */
+    }
+
+    .header-social li a {
+        font-size: 30px; /* Tamaño más pequeño de los iconos */
+    }
 }

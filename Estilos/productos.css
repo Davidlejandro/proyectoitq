@@ -6,13 +6,6 @@ html, body {
     font-family: 'Arial', sans-serif;
 }
 
-/* Medias queries */
-@media screen and (max-width: 400px) {
-    html {
-        font-size: 12px;
-    }
-}
-
 /* Menú de opciones */
 .dos_opciones {
     display: flex;
@@ -37,62 +30,112 @@ html, body {
 
 /* Imagen del producto */
 .imagen-producto {
-    text-align: center;
-    margin-top: 20px;
+    display: flex;
+    justify-content: center; /* Centra la imagen horizontalmente */
+    margin: 20px 0; /* Espacio vertical */
 }
 
 .imagen-producto img {
-    width: 300px;
+    max-width: 100%;
     height: auto;
-    border-radius: 10px;
+    border-radius: 8px;
+    max-height: 800px;
 }
 
-/* Información del precio */
-#cacao-750 h2 {
-    margin-top: 10px;
-    color: black;
-    font-family: 'Barlow', sans-serif;
+/* Sección del precio */
+.licohor {
+    text-align: center;
+    color: brown;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
 }
 
+/* Ubicación */
 .Ubication {
     position: relative;
     width: 100%;
     border: 1px solid rgb(255, 226, 168);
     background-color: rgb(255, 220, 149);
-      /*no tendra dezplasamiento en la derecha*/
-      right: auto;
-      /*No tendra dezplasamiento a la izquierda*/
-      bottom: auto;
 }
+
+/* Imagen de Google Maps */
 .visual-ubication img {
-    /*Posicion absoluta*/
-    position: relative;
-    /*ancho de la imagen con 67 pixeles*/
-    width: 200px;
-    /*alto de 67 pixeles de la imagen*/
-    height: 67px;
-    /*dezplasamiento en la derecha*/
-    left: 44%;
- /*no tendra dezplasamiento en la derecha*/
-    right: auto;
-    /*No tendra dezplasamiento a la izquierda*/
-    bottom: auto;
-    margin: 0;
+    width: 100%; /* Hace que la imagen sea responsiva */
+    max-width: 200px; /* Tamaño máximo de la imagen */
+    height: auto; /* Mantiene la proporción */
+    display: block; /* Evita espacios en línea */
+    margin: 0 auto; /* Centra la imagen */
 }
+
+/* Redes sociales */
+.header-social {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    padding: 10px 0;
+}
+
 .header-social li {
     list-style: none;
+    margin: 0 10px; /* Espacio entre iconos */
 }
-.header-social li a i {
-    font-size: 40px;
-    width: 40px;
-    height: 40px;
+
+.header-social li a {
+    font-size: 42px;
     color: rgb(251, 144, 44);
 }
-.numero_contacto ul li{
+
+/* Contacto */
+.numero_contacto ul {
+    text-align: center; /* Centra los textos */
+    padding: 0; /* Quita el padding por defecto */
+}
+
+.numero_contacto ul li {
+    display: block;
     list-style: none;
-    margin-left: 300px;
-    font-size: 20px;
-    transform: translateY(-70px);
+    font-size: 25px;
     color: rgb(251, 144, 44);
-    font-family: barlow;
+    font-family: Barlow, sans-serif;
+    padding: 10px;
+}
+
+/* Media Queries para Responsividad */
+@media (max-width: 1000px) {
+    .dos_opciones {
+        flex-direction: column; /* Apila los enlaces en móviles */
+    }
+
+    .dos_opciones a {
+        font-size: 20px; /* Ajusta el tamaño del texto */
+    }
+
+    .licohor {
+        font-size: 12px; /* Reduce el tamaño de la fuente en móviles */
+    }
+
+    .numero_contacto ul li {
+        font-size: 20px; /* Ajusta el tamaño del texto */
+    }
+
+    .header-social li a {
+        font-size: 36px; /* Ajusta el tamaño de los iconos */
+    }
+}
+
+@media (max-width: 750px) {
+    .dos_opciones a {
+        font-size: 18px; /* Tamaño aún más pequeño en pantallas muy pequeñas */
+    }
+
+    .licohor {
+        font-size: 10px; /* Reduce aún más el tamaño de la fuente */
+    }
+
+    .numero_contacto ul li {
+        font-size: 18px; /* Ajusta el tamaño del texto */
+    }
+
+    .header-social li a {
+        font-size: 30px; /* Tamaño más pequeño de los iconos */
+    }
 }

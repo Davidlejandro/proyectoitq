@@ -1,15 +1,9 @@
 html {
     font-size: 16px;
+    width: 100%;
 }
 
-/* Adaptamos la letra para pantallas pequeñas */
-@media screen and (max-width: 400px) {
-    html {
-        font-size: 12px;
-    }
-}
-
-/* Alineamos todos los elementos a lo largo del contenedor */
+/* Estilos base para pantallas grandes */
 html,
 body {
     width: 100%;
@@ -22,29 +16,7 @@ body {
     justify-content: center;
 }
 
-/* Para pantallas menores a 600px, hacemos ajustes */
-/* Estilos responsivos */
-@media screen and (max-width: 600px) {
-    body {
-        font-size: 14px;
-    }
-
-    .visual-ubication img {
-        width: 100%;
-        max-width: 150px;
-    }
-
-    .header-social i {
-        font-size: 30px;
-    }
-
-    .numero_contacto {
-        font-size: 16px;
-    }
-}
-
-
-/* Estilos de las secciones */
+/* Secciones */
 .dos-opciones, .tiendauno, .Ubication {
     width: 100%;
     height: 80px;
@@ -54,7 +26,6 @@ body {
     align-items: center;
 }
 
-/* Centramos los enlaces en las secciones */
 .dos-opciones a, .tiendauno a {
     font-family: Barlow;
     font-size: 25px;
@@ -64,79 +35,200 @@ body {
     text-decoration: none;
 }
 
-/* Hover y estado activo de los enlaces */
 .tiendauno a:hover,
 .tiendauno a:focus,
 .tiendauno a:active {
     color: rgb(230, 162, 44);
 }
 
-/* Centramos la imagen en la sección de ubicación */
 .visual-ubication img {
     width: 200px;
-    height: 67px;
+    height: auto;
     margin: 0 auto;
     display: block;
 }
 
-/* Centramos el logo */
+#Logo_nosotros {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    background-image: url("../imagenes/Fondopajaritoblu.avif");
+}
+
 #Logo_nosotros img {
-    max-width: 100%; /* Ajusta el ancho al contenedor */
-    height: auto;    /* Mantiene la proporción de la imagen */
+    max-width: 100%;
+    height: auto;
     margin: 0 auto;
     display: block;
 }
-#Logo_nosotros {
-    width: 100%; /* Contenedor ocupa todo el ancho disponible */
-    max-width: 600px; /* Limita el ancho máximo si es necesario */
-    margin: 0 auto; /* Centra el contenedor */
-}
-/* Centramos y estilizamos el título */
+
 #nosotros_h2 h2 {
     text-align: center;
     color: rgb(255, 131, 37);
     font-family: Barlow;
 }
 
-/* Centramos y estilizamos los párrafos */
 #nosotros_p h3 p {
-    font-size: 23px;
-    text-align: center;
-    color: rgb(255, 131, 37);
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: 1200px;
+    font-size: 18px;
+    text-align: left;
+    color: brown;
     font-family: Lexend;
 }
 
-/* Centrar el contenido completo de la sección de contacto */
-.numero_contacto {
-    text-align: center; /* Centra todo el contenido */
-    margin-top: 20px;
+.Ubication {
+    background-color: rgb(212, 212, 226);
+    padding: 20px 0;
+    text-align: center;
 }
 
-/* Alinear los iconos de redes sociales en una fila */
+.visual-ubication {
+    background: white;
+    margin: 0 20px;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.visual-ubication img {
+    width: 200px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.visual-ubication a {
+    display: block;
+    color: rgb(255, 0, 0);
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+/* Redes sociales */
 .header-social {
     display: flex;
-    justify-content: center; /* Centra los iconos horizontalmente */
-    gap: 20px; /* Añade espacio entre los iconos */
-    padding: 0;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px 0;
     list-style: none;
-    margin-bottom: 10px; /* Añade espacio entre los iconos y la información de contacto */
+    margin: 0;
 }
 
-/* Estilo para los iconos de redes sociales */
 .header-social li a i {
     font-size: 45px;
-    width: 40px;
-    height: 40px;
     color: rgb(251, 144, 44);
 }
 
-/* Centrar y estilizar la información de contacto */
-.numero_contacto ul li {
-    text-align: center; /* Centra el texto del contacto */
+/* Información de contacto */
+.numero_contacto {
+    text-align: center;
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+
+.numero_contacto ul {
     list-style: none;
+    padding: 0;
+}
+
+.numero_contacto ul li {
     font-size: 20px;
     color: rgb(255, 131, 37);
     font-family: Barlow, sans-serif;
-    margin-top: 1px; /* Mueve el texto hacia arriba */
-    transform: translateY(-10px); /* Ajusta aún más hacia arriba */
+    margin: 5px 0;
+}
+
+/* Media queries para hacer el sitio responsivo */
+
+/* Pantallas de 1920px o más */
+@media (max-width: 1920px) {
+    .dos-opciones, .tiendauno, .Ubication {
+        height: 70px;
+    }
+
+    .dos-opciones a, .tiendauno a {
+        font-size: 24px;
+    }
+
+    .visual-ubication img {
+        width: 180px;
+    }
+
+    .header-social li a i {
+        font-size: 40px;
+    }
+
+    #nosotros_p h3 p {
+        font-size: 17px;
+    }
+}
+
+/* Pantallas de 1200px o menos */
+@media (max-width: 1200px) {
+    .visual-ubication img {
+        width: 160px;
+    }
+
+    .header-social li a i {
+        font-size: 35px;
+    }
+
+    .numero_contacto ul li {
+        font-size: 18px;
+    }
+}
+
+/* Pantallas de 768px o menos (tablets) */
+@media (max-width: 768px) {
+    .dos-opciones, .tiendauno, .Ubication {
+        height: 50px;
+    }
+
+    .dos-opciones a, .tiendauno a {
+        font-size: 18px;
+    }
+
+    .visual-ubication img {
+        width: 140px;
+    }
+
+    .header-social li a i {
+        font-size: 30px;
+    }
+
+    #nosotros_p h3 p {
+        font-size: 14px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+/* Pantallas de 480px o menos (smartphones) */
+@media (max-width: 480px) {
+    html {
+        font-size: 14px;
+    }
+
+    .dos-opciones, .tiendauno, .Ubication {
+        height: 40px;
+    }
+
+    .dos-opciones a, .tiendauno a {
+        font-size: 16px;
+    }
+
+    .visual-ubication img {
+        width: 120px;
+    }
+
+    .header-social li a i {
+        font-size: 25px;
+    }
+
+    #nosotros_p h3 p {
+        font-size: 12px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
 }

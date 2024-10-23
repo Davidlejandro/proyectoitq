@@ -1,184 +1,177 @@
-/* Tamaño del contenido de toda la página */
-html {
-    font-size: 16px; /* Base para el tamaño de fuente */
-}
-
-/* Mediasquery para tamaños de pantalla menores a 400px */
-@media screen and (max-width: 400px) {
-    html {
-        font-size: 12px; /* Ajuste más razonable que 3px */
-    }
-}
-
-/* Los elementos del height usarán el 100% de sus contenedores */
-html,
-body {
-    width: 100%;
-    border: 1px solid rgb(255, 239, 207);
+/* Estilos generales */
+html, body {
     margin: 0;
-    background: rgb(255, 239, 207);
-}
-
-/* Mediasquery para tamaños de pantalla menores a 600px */
-@media screen and (max-width: 600px) {
-    h1,
-    .h1,
-    h2,
-    .h2,
-    h3,
-    .h3,
-    h4,
-    .h4 {
-        margin-top: 3rem; /* Ajuste de margen */
-    }
-}
-
-/* Estilos para .dos-opciones */
-.dos-opciones {
-    position: relative;
+    padding: 0;
     width: 100%;
-    border: 1px solid rgb(243, 194, 120);
-    height: 80px;
-    background-color: rgb(243, 194, 120);
-    display: flex; /* Usar flexbox */
-    justify-content: center; /* Centrar horizontalmente */
-    align-items: center; /* Centrar verticalmente */
-}
-
-/* Estilo al menú de la tienda para regresar a la página principal */
-.dos-opciones a {
-    display: inline-block;
-    position: relative;
+    height: 100%;
+    font-family: 'Barlow', sans-serif;
+    background-color: rgb(255, 239, 207);
     text-align: center;
-    padding: 1rem 0; /* Ajuste de padding */
-    font-family: Barlow;
-    font-size: 1.5rem; /* Unidades relativas */
-    color: white;
-    margin: 0 1rem;
+    color: rgb(90, 54, 3);
+    line-height: 1.6;
+    font-size: 1rem; /*Tamaño de fuente base*/
+    box-sizing: border-box;
 }
 
-/* Estilos para .tiendauno */
+/* Asegura que cada sección ocupe el 100% del ancho disponible */
+section, div {
+    width: 100%;
+}
+
+/* Contenedor del encabezado (Tienda) */
 .tiendauno {
-    position: relative;
-    width: 100%;
-    border: 1px solid rgb(243, 194, 120);
-    height: 80px;
-    background-color: rgb(243, 194, 120);
-    display: flex; /* Usar flexbox */
-    justify-content: center; /* Centrar horizontalmente */
-    align-items: center; /* Centrar verticalmente */
+    background-color: rgb(131, 79, 2);
+    padding: 1rem 0;
+    font-size: 1.5rem; /* Tamaño de fuente adaptable */
 }
 
-/* Estilo al menú de la tienda para regresar a la página principal */
 .tiendauno a {
-    display: inline-block;
-    position: relative;
-    text-align: center;
-    padding: 1rem 0; /* Ajuste de padding */
-    font-family: Barlow;
-    font-size: 1.5rem; /* Unidades relativas */
     color: white;
-    margin: 0; /* Eliminar margenes laterales */
+    text-decoration: none;
+    font-weight: bold;
 }
 
-.tiendauno a:hover,
-.tiendauno a:focus,
-.tiendauno a:active {
-    color: rgb(230, 162, 44);
+/* Sección de contacto */
+#contactos {
+    margin: 2rem 0;
 }
 
-/* Estilos para .header-social */
+#contactos h2 {
+    color: rgb(255, 170, 58);
+    font-size: 2rem; /* Tamaño adaptativo */
+    font-weight: bold;
+}
+
+#contactos p {
+    color: rgb(253, 180, 107);
+    font-size: 1.5rem; /* Tamaño adaptable */
+}
+
+/* Lista de contactos */
+.loscontactos {
+    margin: 1rem auto;
+    font-size: 1.2rem; /* Tamaño adaptable */
+}
+
+/* Información de ubicación */
+#contactos_ubicacion {
+    margin: 2rem 0;
+}
+
+#contactos_ubicacion h1 {
+    font-size: 1.8rem; /* Tamaño adaptable */
+    color: rgb(90, 54, 3);
+}
+
+#contactos_ubicacion p {
+    font-size: 1.2rem; /*Tamaño adaptable*/
+}
+
+/*Imagen de la ubicación*/
+#mapa {
+    margin: 2rem auto;
+    display: flex;
+    justify-content: center;
+}
+
+#mapa img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/*Sección de Google Maps*/
+.Ubication {
+    background-color: rgb(255, 220, 149);
+    padding: 2rem 0;
+    margin: 2rem 0;
+}
+
+.visual-ubication {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.visual-ubication img {
+    max-width: 15vw;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.visual-ubication img:hover {
+    transform: scale(1.05);
+}
+
+/*Redes sociales*/
 .header-social {
-    display: flex; /* Usar flexbox */
-    justify-content: center; /* Centrar horizontalmente */
-    margin: 1rem 0; /* Margen superior e inferior */
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
 }
 
-/* Tamaño y posición a los iconos de las redes sociales */
 .header-social li {
-    margin: 0 1rem; /* Espacio entre iconos */
+    list-style: none;
 }
 
 .header-social li a i {
-    font-size: 2.5rem; /* Unidades relativas */
-    color: rgb(255, 170, 58);
-}
-
-/* Estilos para .Ubication */
-.Ubication {
-    position: relative;
-    width: 100%;
-    border: 1px solid rgb(255, 226, 168);
-    background-color: rgb(255, 220, 149);
-}
-
-/* Estilo para imágenes en .visual-ubication */
-.visual-ubication img {
-    position: relative;
-    width: 100%; /* Ajustar a 100% del contenedor */
-    max-width: 200px; /* Limitar el ancho máximo */
-    height: auto; /* Mantener proporciones */
-    left: 50%; /* Centrar */
-    transform: translateX(-50%); /* Ajustar centrado */
-}
-
-/* Estilos para #contactos_h2 */
-#contactos_h2 h2 {
-    text-align: center;
-    color: rgb(255, 170, 58);
-    font-family: Barlow;
-}
-
-/* Estilo al párrafo de las instrucciones */
-#contactos_p h3 p {
-    text-align: center; /* Centramos el texto */
-    color: rgb(253, 180, 107);
-    font-size: 1.25rem; /* Unidades relativas */
-    font-family: Lexend;
-}
-
-/* Estilo a la lista de los contactos */
-.loscontactos ul li {
-    list-style: none;
-    font-size: 1.25rem; /* Unidades relativas */
-    color: rgb(253, 180, 107);
-    text-align: center; /* Centrar elementos */
-}
-
-/* Estilo a los contactos de la ubicación */
-#contactos_ubicacion h1 { 
-    text-align: center;
-    color: rgb(255, 170, 58);
-    font-family: Barlow;
-    font-size: 1.5rem; /* Unidades relativas */
-}
-
-/* Ubicación de la imagen del mapa */
-#mapa {
-    display: flex; /* Usar flexbox para centrar la imagen */
-    justify-content: center; /* Centrar horizontalmente */
-    align-items: center; /* Centrar verticalmente */
-    overflow: hidden; /* Ocultar cualquier desbordamiento */
-    width: 100%; /* Ancho completo del contenedor */
-    max-width: 600px; /* Ancho máximo, opcional */
-    margin: 0 auto; /* Centrar el contenedor */
-}
-
-#mapa img { 
-    width: 100%; /* Ajusta la imagen al ancho del contenedor */
-    height: auto; /* Mantiene la proporción de la imagen */
-    display: block; /* Asegura que no haya espacio en la parte inferior */
-}
-
-/* Indicamos que los iconos sociales no tengan puntos de lista desordenada */
-.header-social li {
-    list-style: none;
-}
-
-/* Ubicación a los contactos de las listas al lado de los iconos para diseño moderno */
-.numero_contacto ul li {
-    list-style: none;
-    font-size: 1.25rem; /* Unidades relativas */
+    font-size: 2rem;
     color: rgb(251, 144, 44);
-    text-align: center; /* Centrar elementos */
+    transition: color 0.3s ease;
+}
+
+.header-social li a i:hover {
+    color: rgb(255, 170, 58);
+}
+
+/*Contacto*/
+.numero_contacto {
+    color: rgb(251, 144, 44);
+    font-size: 1rem;
+    margin: 2rem 0;
+    font-weight: bold;
+}
+
+/*Estilos responsivos*/
+@media screen and (max-width: 600px) {
+    body {
+        font-size: 14px; /*Reducir tamaño de fuente en dispositivos móviles*/
+    }
+
+    #contactos h2 {
+        font-size: 1.5rem; /*Reducir tamaño de h2 en móviles*/
+    }
+
+    #contactos p {
+        font-size: 1rem; /*Reducir tamaño de párrafo en móviles*/
+    }
+
+    #contactos_ubicacion h1 {
+        font-size: 1.5rem; /*Reducir tamaño de h1 en móviles*/
+    }
+
+    #contactos_ubicacion p {
+        font-size: 1rem; /*Reducir tamaño de párrafo en móviles*/
+    }
+
+    .loscontactos {
+        font-size: 0.9rem; /*Reducir tamaño de lista de contactos*/
+    }
+
+    #mapa img {
+        width: 80%; /*Imagen responsiva en móviles*/
+    }
+
+    .visual-ubication img {
+        max-width: 40vw; /*Reducir tamaño de imagen de Google Maps*/
+    }
+
+    .header-social li a i {
+        font-size: 1.5rem; /*Reducir tamaño de iconos en móviles*/
+    }
+
+    .numero_contacto {
+        font-size: 0.9rem; /*Reducir tamaño de contacto en móviles*/
+    }
 }

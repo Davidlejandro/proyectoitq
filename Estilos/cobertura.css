@@ -1,67 +1,122 @@
-
-/* Estilos generales */
-body {
-    font-family: 'Barlow', sans-serif;
-    background-color: rgb(255, 239, 207);
+/* -------- Estilos generales -------- */
+* {
     margin: 0;
     padding: 0;
-    text-align: center;
+    box-sizing: border-box;
 }
 
-/* Contenedor del encabezado (Tienda) */
+html, body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Barlow', sans-serif;
+    background: linear-gradient(135deg, rgba(255, 239, 207, 0.9), rgba(255, 223, 186, 1));
+    color: rgb(90, 54, 3);
+    line-height: 1.6;
+    text-align: center;
+    overflow-x: hidden; /* Elimina desplazamiento horizontal no deseado */
+}
+
+/* Encabezado (Tienda) */
 .tiendauno {
-    background-color: rgb(243, 194, 120);
-    padding: 10px 0;
-    font-size: 24px;
+    background: linear-gradient(45deg, rgb(131, 79, 2), rgb(153, 94, 0));
+    padding: 20px 0;
+    font-size: 28px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+    width: 100%;
 }
 
 .tiendauno a {
     color: white;
     text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
 }
 
-/* Estilos para la cobertura */
-#cobertura_h2 {
-    margin: 20px auto;
+.tiendauno a:hover {
     color: rgb(255, 170, 58);
 }
 
-#cobertura_h3, #cobertura_list {
-    margin: 10px auto;
-    color: rgb(253, 180, 107);
+/* Sección de cobertura */
+#cobertura_h2 {
+    margin: 40px auto;
+    color: rgb(255, 170, 58);
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    width: 100%;
 }
 
-/* Estilos para la imagen de la casita */
-#casitasalinas {
+#cobertura_h3, #cobertura_list {
     margin: 20px auto;
+    text-align: left;
+    color: rgb(253, 180, 107);
+    font-size: 22px;
+    line-height: 1.8;
+    max-width: 90%; /* Ajuste automático */
+}
+
+/* Imagen decorativa */
+#casitasalinas {
+    margin: 30px auto;
+    width: 100%; /* Aprovechar todo el ancho */
+    display: flex;
+    justify-content: center;
+    transition: transform 0.3s ease;
 }
 
 #casitasalinas img {
-    max-width: 200px;
+    max-width: 300px;
     height: auto;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Estilos para la sección de Google Maps */
+#casitasalinas img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Sección de Google Maps */
 .Ubication {
-    background-color: rgb(255, 220, 149);
-    padding: 20px 0;
-    border-top: 1px solid rgb(255, 226, 168);
-    border-bottom: 1px solid rgb(255, 226, 168);
-    margin: 20px 0;
+    background-color: rgb(247, 247, 247);
+    padding: 30px 0;
+    border-top: 2px solid rgb(255, 226, 168);
+    border-bottom: 2px solid rgb(255, 226, 168);
+    margin: 0 auto;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 1200px;
 }
 
 .visual-ubication {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 
-/* Estilos para las redes sociales */
+.visual-ubication img {
+    max-width: 250px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.visual-ubication img:hover {
+    transform: scale(1.08);
+}
+
+/* Redes sociales */
 .header-social {
     display: flex;
     justify-content: center;
-    gap: 20px;
-    margin-top: 20px;
+    gap: 40px;
+    margin-top: 40px;
+    width: 100%;
 }
 
 .header-social li {
@@ -69,33 +124,58 @@ body {
 }
 
 .header-social li a i {
-    font-size: 40px;
+    font-size: 50px;
     color: rgb(251, 144, 44);
+    transition: color 0.3s ease;
 }
 
-/* Estilos para los contactos */
+.header-social li a i:hover {
+    color: rgb(255, 170, 58);
+}
+
+/* Contacto */
 .numero_contacto {
     color: rgb(251, 144, 44);
-    font-size: 18px;
-    margin: 20px 0;
+    font-size: 20px;
+    margin: 30px 0;
+    font-weight: bold;
 }
 
+/* -------- Media Queries -------- */
+
 /* Estilos responsivos */
-@media screen and (max-width: 600px) {
+/* Estilos responsivos */
+@media screen and (max-width: 500px) {
     body {
-        font-size: 14px;
+        font-size: 4vw; /* Proporcional al ancho de la ventana */
+    }
+
+    .tiendauno {
+        font-size: 5vw; /* Proporcional al ancho de la ventana */
+    }
+
+    #cobertura_h2 {
+        font-size: 5vw; /* Proporcional al ancho de la ventana */
+    }
+
+    #cobertura_h3,
+    #cobertura_list {
+        font-size: 4vw; /* Proporcional al ancho de la ventana */
     }
 
     #casitasalinas img {
-        width: 100%;
-        max-width: 150px;
+        max-width: 80%; /* Más pequeño en móviles */
     }
 
-    .header-social i {
-        font-size: 30px;
+    .visual-ubication img {
+        max-width: 50%; /* Más pequeño en móviles */
+    }
+
+    .header-social li a i {
+        font-size: 4vw; /* Proporcional al ancho de la ventana */
     }
 
     .numero_contacto {
-        font-size: 16px;
+        font-size: 3vw; /* Proporcional al ancho de la ventana */
     }
 }

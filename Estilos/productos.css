@@ -10,17 +10,17 @@ html, body {
 .dos_opciones {
     display: flex;
     justify-content: center;
-    gap: 20px; /* Espacio entre los enlaces */
-    padding: 20px;
-    background-color: rgb(243, 194, 120);
-    border: 1px solid rgb(243, 194, 120);
+    gap: 20px; /*Espacio entre los enlaces*/
+    padding: 20px;/*Margen interior del contenedor*/
+    background-color: rgb(243, 194, 120);/*Color del fondo*/
+    border: 1px solid rgb(243, 194, 120);/*Color del borde*/
 }
 
 .dos_opciones a {
-    text-align: center;
-    font-size: 25px;
-    color: white;
-    text-decoration: none;
+    text-align: center;/*Texto al centro*/
+    font-size: 25px;/*Tamaño de la letra*/
+    color: white;/*Color blanco*/
+    text-decoration: none;/*Que el texto no tenga ninguna decoracion*/
     font-family: 'Barlow', sans-serif;
 }
 
@@ -36,18 +36,18 @@ html, body {
 }
 
 .imagen-producto img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-    max-height: 800px;
+    max-width: 100%;/*La anchura sera del 100% del contenedor de la imagen*/
+    height: auto;/*Altura*/
+    border-radius: 8px;/*El borde de la imagen sera de 8px*/
+    max-height: 800px;/*Maxima altura*/
 }
 
 /* Sección del precio */
 .licohor {
-    text-align: center;
-    color: brown;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 14px;
+    text-align: center; /*El texto esta alineado a centro*/
+    color: brown;/*Color de la clase licor a rojo*/
+    font-family: Verdana, Geneva, Tahoma, sans-serif;/*El tipo de letra*/
+    font-size: 14px; /*Tamaño de la letra*/
 }
 
 /* Ubicación */

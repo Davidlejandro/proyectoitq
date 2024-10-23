@@ -87,50 +87,73 @@ section, div {
     margin: 2rem 0;
 }
 
+/* Imagen de la ubicación */
+#mapa {
+    margin: 2rem auto; /* Centra el contenedor horizontalmente y agrega margen vertical */
+    display: flex; /* Usa Flexbox para organizar el contenido */
+    justify-content: center; /* Centra el contenido horizontalmente */
+}
+
+#mapa img {
+    max-width: 100%; /* La imagen se ajusta al ancho máximo del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+/* Sección de Google Maps */
+.Ubication {
+    background-color: rgb(255, 220, 149); /* Color de fondo */
+    padding: 2rem 0; /* Espacio superior e inferior */
+    margin: 2rem 0; /* Margen superior e inferior */
+}
+
 .visual-ubication {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: flex; /* Usa Flexbox para alinear los elementos */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
 }
 
 .visual-ubication img {
-    max-width: 15vw;
-    height: auto;
-    transition: transform 0.3s ease;
+    max-width: 15vw; /* La imagen ocupará el 15% del ancho de la ventana */
+    height: auto; /* Mantiene la proporción original */
+    transition: transform 0.3s ease; /* Transición suave para el efecto de escala */
 }
 
+/* Efecto de zoom al pasar el cursor */
 .visual-ubication img:hover {
-    transform: scale(1.05);
+    transform: scale(1.05); /* Aumenta el tamaño de la imagen un 5% */
 }
 
-/*Redes sociales*/
+/* Redes sociales */
 .header-social {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    margin-top: 2rem;
+    display: flex; /* Flexbox para alinear los elementos */
+    justify-content: center; /* Centra los iconos horizontalmente */
+    gap: 2rem; /* Espacio entre los iconos */
+    margin-top: 2rem; /* Margen superior */
 }
 
 .header-social li {
-    list-style: none;
+    list-style: none; /* Elimina viñetas de los elementos de lista */
 }
 
+/* Estilo de los iconos sociales */
 .header-social li a i {
-    font-size: 2rem;
-    color: rgb(251, 144, 44);
-    transition: color 0.3s ease;
+    font-size: 2rem; /* Tamaño de los iconos */
+    color: rgb(251, 144, 44); /* Color inicial */
+    transition: color 0.3s ease; /* Transición suave para el cambio de color */
 }
 
+/* Cambia el color al interactuar con el icono */
 .header-social li a i:hover {
-    color: rgb(255, 170, 58);
+    color: rgb(255, 170, 58); /* Color más claro al pasar el cursor */
 }
 
-/*Contacto*/
+/* Contacto */
 .numero_contacto {
-    color: rgb(251, 144, 44);
-    font-size: 1rem;
-    margin: 2rem 0;
-    font-weight: bold;
+    color: rgb(251, 144, 44); /* Color del texto */
+    font-size: 1rem; /* Tamaño del texto */
+    margin: 2rem 0; /* Margen superior e inferior */
+    font-weight: bold; /* Texto en negrita */
 }
 
 /*Estilos responsivos*/
